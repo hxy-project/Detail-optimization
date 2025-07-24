@@ -1,0 +1,2 @@
+# Detail-optimization
+alorair detail
