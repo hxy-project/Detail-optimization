@@ -9699,7 +9699,10 @@
                                 cursor: pointer;
                                 overflow: hidden;
                             }
-    
+                            .youtube-thumbnail{
+                            width: 100%;
+                            height: 100%;
+                            }
                             .youtube-facade img {
                                 width: 100%;
                                 height: 100%;
@@ -9963,6 +9966,7 @@
                 
                     const loadIframe = () => {
                       const videoUrl = facade.dataset.videoUrl; // 读取完整 URL
+                      console.log(videoUrl)
                       if (!videoUrl) return;
                 console.log('youtube开始加载了')
                       const iframe = document.createElement("iframe");
