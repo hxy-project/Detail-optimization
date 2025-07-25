@@ -9609,7 +9609,38 @@
                                                                                                                             </ul>
                         </div>
 
+                        <style>
+                              .youtube-facade {
+                                  position: relative;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  width: 100%;
+                                  min-height: 288px;
+                                  aspect-ratio: 16 / 9;
+                                  background: #000;
+                                  cursor: pointer;
+                                  overflow: hidden;
+                              }
                         
+                              .youtube-facade img {
+                                  width: 100%;
+                                  height: 100%;
+                                  object-fit: cover;
+                                  display: block;
+                              }
+                        
+                              .play-button {
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 50%;
+                                  width: 60px;
+                                  height: 60px;
+                                  background-size: 400px auto;
+                                  transform: translate(-50%, -50%);
+                                  pointer-events: none;
+                              }
+                          </style>                     
                         
                         <section class="box">
                             <div style="clear:both"></div>
@@ -9692,10 +9723,18 @@
 1- Merv-1&nbsp;Filter&nbsp;<br />
 1- User Manual&nbsp;</span></p>                                    </div>
                                 
-                                                                                                            <div id="home" class="tab-pane fade">
-                                            <iframe src="https://www.youtube.com/embed/OzlBPVuIgZw" width="390"
+                                    <div id="home" class="tab-pane fade">
+                                                 <div class="youtube-facade" data-video-id="OzlBPVuIgZw">
+                                                <div class="youtube-thumbnail" role="button" tabindex="0" aria-label="Play video">
+                                                 <img src="https://img.youtube.com/vi/OzlBPVuIgZw/maxresdefault.jpg
+                                                    " alt="Video thumbnail">
+                                        <svg t="1750813377926" class="icon play-button" viewBox="0 0 1462 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1488" width="200" height="200"><path d="M1448.228571 220.891429s-14.336-100.303238-58.12419-144.530286C1334.418286 18.334476 1272.05181 18.139429 1243.428571 14.774857 1038.823619 0 731.721143 0 731.721143 0h-0.585143S424.033524 0 219.37981 14.774857C190.659048 18.139429 128.438857 18.383238 72.655238 76.361143 28.867048 120.58819 14.628571 220.94019 14.628571 220.94019S0 338.651429 0 456.411429v110.543238c0 117.808762 14.628571 235.617524 14.628571 235.617523s14.287238 100.303238 58.075429 144.530286c55.734857 58.026667 128.828952 56.07619 161.353143 62.220191C351.085714 1020.537905 731.428571 1024 731.428571 1024s307.395048-0.487619 512.048762-15.164952c28.672-3.413333 90.940952-3.705905 146.578286-61.68381 43.885714-44.227048 58.172952-144.579048 58.172952-144.579048s14.628571-117.76 14.628572-235.568761V456.508952c0-117.808762-14.628571-235.617524-14.628572-235.617523z" fill="#FF0000" p-id="1489"></path><path d="M633.904762 731.428571V292.571429l341.333333 220.16z" fill="#FFFFFF" p-id="1490"></path></svg>
+                                                                                        
+                                                </div>
+                                                 </div>
+                                            <!-- <iframe src="https://www.youtube.com/embed/OzlBPVuIgZw" width="390"
                                                     height="220" frameborder="0"
-                                                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                                    allow="autoplay; fullscreen" allowfullscreen></iframe> -->
                                         </div>
                                                                     
                                                             </div>
@@ -9733,38 +9772,7 @@
             </section>
         </div>
     </div>
-    <style>
-      .youtube-facade {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          min-height: 288px;
-          aspect-ratio: 16 / 9;
-          background: #000;
-          cursor: pointer;
-          overflow: hidden;
-      }
 
-      .youtube-facade img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-      }
-
-      .play-button {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 60px;
-          height: 60px;
-          background-size: 400px auto;
-          transform: translate(-50%, -50%);
-          pointer-events: none;
-      }
-  </style>
     <section class="prodinfo">
                     <div class="container">
                 <div class="infocollapse">
