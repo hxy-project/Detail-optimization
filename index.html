@@ -9964,7 +9964,7 @@
                     const loadIframe = () => {
                       const videoUrl = facade.dataset.videoUrl; // 读取完整 URL
                       if (!videoUrl) return;
-                
+                console.log('youtube开始加载了')
                       const iframe = document.createElement("iframe");
                       iframe.setAttribute("src", `${videoUrl}?autoplay=1`);
                       iframe.setAttribute("frameborder", "0");
